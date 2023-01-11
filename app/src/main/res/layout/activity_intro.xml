@@ -40,13 +40,13 @@
                     android:background="@drawable/background_radius"
 
                     android:text="로그인하기"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"/>
 
                 <Button
                     android:id="@+id/joinBtn"
                     android:text="회원가입"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_margin="5dp"
                     android:background="@drawable/background_radius"
@@ -55,7 +55,7 @@
                 <Button
                     android:id="@+id/noAccountBtn"
                     android:text="비회원으로 시작하기"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_margin="5dp"
                     android:background="@drawable/background_radius"

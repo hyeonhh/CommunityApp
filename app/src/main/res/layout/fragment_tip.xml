@@ -1,15 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.TipFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="팁" />
+        tools:context=".fragments.TipFragment">
 
-</FrameLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="70dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:id="@+id/category1"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_all"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_cook"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_economy"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_else"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_hobby"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_interior"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_life"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_oneroom"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/mainColor"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:id="@+id/homeTap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bottom_hometap" />
+
+                <ImageView
+                    android:id="@+id/tipTap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bottom_goodtip" />
+
+                <ImageView
+                    android:id="@+id/talkTap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bottom_talk" />
+
+                <ImageView
+                    android:id="@+id/bookmarkTap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bottom_bookmark" />
+
+
+                <ImageView
+                    android:id="@+id/storeTap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/bottom_store" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </FrameLayout>
+
+</layout>
